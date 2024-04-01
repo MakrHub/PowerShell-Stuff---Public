@@ -1,0 +1,1 @@
+﻿$admins = net localgroup administrators;foreach ($admin in $admins){if(gwmi win32_useraccount | where{$_.Disabled -eq $false -and $_.name -eq $admin}){Write-Host $admin}}

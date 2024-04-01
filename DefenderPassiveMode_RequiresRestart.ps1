@@ -1,0 +1,1 @@
+New-ItemProperty -Path "HKLM:\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection" -Name "ForceDefenderPassiveMode" -PropertyType DWORD -Value 1 -Force
